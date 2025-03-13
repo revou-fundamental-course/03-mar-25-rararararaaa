@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>My Website</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="LOGO UM.jpg" alt="Logo" class="logo-img"/>
+                <span>My Website</span>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="ourprofile.html">Our Profile</a>
+                <a href="achievement.html">Achievement</a>
+                <a href="messageus.html">Message Us</a>
+            </nav>
+        </div>
+    </header>
+    
+<main class="container mx-auto py-10 px-6" id="mainContent">
+    <section class="text-left mb-10" id="homePage">
+        <h1 class="text-3xl font-bold" id="welcomeMessage">Hi, Welcome To Website</h1>
+        <p class="text-gray-600">Ini adalah website latihan pertama</p><br><br>
+        <div class="image-container">
+            <img alt="Main Image" class="main-image" height="450" src="Kampus UM.jpg" width="900"/>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="about">
+            <h2>About Our University</h2>
+            <p>Universitas Mandiri, atau disingkat UM, adalah sebuah universitas swasta yang terletak di Kabupaten Subang, Jawa Barat. Universitas ini berada di bawah naungan Yayasan Lembaga Pendidikan Yudistira.</p>
+        </section>
+
+        <section class="vision-mission">
+            <h2>Our Vision & Mission</h2>
+            <p class="align-left">
+                <strong>Visi</strong><br>
+                Menjadi sentral pendidikan, penelitian dan pengabdian masyarakat yang bermartabat, handal dalam penguasaan ilmu pengetahuan dan teknologi berlandaskan kecintaan terhadap bangsa, negara, dan agama.
+                <br><br>
+                <strong>Misi</strong><br>
+                1. Berperan aktif dalam mencerdaskan bangsa.<br>
+                2. Mendidik generasi yang siap menghadapi perubahan dengan penguasaan ilmu pengetahuan dan teknologi berlandaskan keimanan dan ketaqwaan.<br>
+                3. Menjunjung tinggi nilai-nilai budi pekerti dalam profesionalisme, bermasyarakat, berbangsa, dan bernegara.
+            </p>
+        </section>
+
+        <section class="facilities">
+            <h2>Our Facilitation</h2>
+            <div class="facility-list">
+                <div class="facility-item">
+                    <img src="Parkir.jpg" alt="Parkir"/>
+                    <p>Parkir</p>
+                </div>
+                <div class="facility-item">
+                    <img src="Perpustakaan.jpg" alt="Perpustakaan"/>
+                    <p>Perpustakaan</p>
+                </div>
+                <div class="facility-item">
+                    <img src="Aula.jpg" alt="Aula"/>
+                    <p>Aula</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-section">
+            <div class="message-form">
+                <h2>Message Us</h2>
+                <form id="messageForm">
+                    <input type="text" id="name" placeholder="Nama" required/>
+                    <input type="date" id="dob" required/>
+                    
+                    <label>Jenis Kelamin:</label>
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" value="Laki-laki">
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan">
+                        <label for="female">Perempuan</label>
+                    </div>
+                    
+                    <textarea id="message" placeholder="Pesan" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="message-output">
+                <h2>Hasil Pesan</h2>
+                <div class="result-box">
+                    <p><strong>Nama:</strong> <span id="displayName"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="displayDob"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="displayGender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="displayMessage"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Created By Raisya Azhar</p>
+    </footer>
+</body>
+</html>
